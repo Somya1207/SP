@@ -1,5 +1,5 @@
 section .data
-        n equ 7
+        n equ 15
 section .text
         global _start
 _start: 
@@ -10,7 +10,6 @@ _start:
         syscall
 
 fibonacci_number:
-     
         cmp rdi, 0
         jle fibonacci_0
         cmp rdi, 1
